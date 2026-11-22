@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="750">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3c2218"/><stop offset="1" stop-color="#c66b35"/></linearGradient></defs>
+<rect width="500" height="750" fill="url(#g)"/>
+<rect x="24" y="24" width="452" height="702" rx="18" fill="none" stroke="white" stroke-opacity=".2" stroke-width="3"/>
+<circle cx="250" cy="250" r="110" fill="white" opacity=".08"/>
+<path d="M145 470 L250 325 L355 470 Z" fill="white" opacity=".12"/>
+<text x="250" y="585" fill="white" font-family="Arial" font-weight="700" font-size="32" text-anchor="middle">AVENGERS</text>
+<text x="250" y="630" fill="white" font-family="Arial" font-size="18" text-anchor="middle" opacity=".75">MOVIEFIX</text>
+</svg>

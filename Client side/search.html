@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results | MovieFix</title>
+    <link rel="stylesheet" href="client.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <div class="container nav">
+
+            <a href="index.html" class="brand">
+                Movie<span>Fix</span>
+            </a>
+
+            <nav class="nav-links">
+                <a class="active" href="index.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="index.html#genres">Genres</a>
+                <a href="index.html#trending">Trending</a>
+                <a href="watchlist.html">My Watchlist</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <input
+                    class="search-mini"
+                    type="text"
+                    placeholder="Search movies..."
+                    onkeydown="if(event.key === 'Enter') location.href = 'search.html?q=' + encodeURIComponent(this.value)"
+                >
+
+                <a class="btn btn-red" href="profile.html">
+                    Login
+                </a>
+
+                <button class="menu">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="search-page">
+
+            <div class="container">
+
+                <div class="search-bar">
+
+                    <input
+                        id="pageSearch"
+                        type="text"
+                        placeholder="Search movies..."
+                    >
+
+                </div>
+
+                <div class="section-head">
+
+                    <h2>
+                        Search <span>Results</span>
+                    </h2>
+
+                </div>
+
+                <div
+                    class="grid"
+                    data-movie-grid="search">
+                </div>
+
+                <div class="pagination">
+
+                    <button>‹</button>
+
+                    <button class="active">
+                        1
+                    </button>
+
+                    <button>
+                        2
+                    </button>
+
+                    <button>
+                        3
+                    </button>
+
+                    <button>
+                        ›
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+            MovieFix • Responsive Client Side Web Pages • College Project
+        </div>
+
+    </footer>
+
+    <div class="toast"></div>
+
+    <script src="client.js"></script>
+
+</body>
+
+</html>

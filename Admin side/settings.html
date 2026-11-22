@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | MovieFix Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <header class="top">
+        <a href="index.html" class="brand">
+            Movie<span>Fix</span> Admin
+        </a>
+
+        <a href="../Client%20Side%20Web%20pages/index.html" class="muted">
+            View Client Site ↗
+        </a>
+    </header>
+
+    <div class="layout">
+
+        <aside class="side">
+            <a href="index.html">Dashboard</a>
+            <a href="manage-movies.html">Movies</a>
+            <a href="users.html">Users</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="settings.html" class="active">Settings</a>
+
+            <a href="../Client%20Side%20Web%20pages/index.html">
+                Open Client Site
+            </a>
+
+            <a href="../index.html">
+                Back to Project
+            </a>
+        </aside>
+
+        <main class="main">
+
+            <div class="head">
+                <div>
+                    <div class="muted">ADMIN SIDE</div>
+                    <h1>Settings</h1>
+                </div>
+            </div>
+
+            <div class="panel">
+
+                <form
+                    class="form"
+                    onsubmit="event.preventDefault(); toast('Settings saved')">
+
+                    <label>
+                        Site Name
+                        <input
+                            type="text"
+                            value="MovieFix">
+                    </label>
+
+                    <label>
+                        Admin Email
+                        <input
+                            type="email"
+                            value="Nandan@moviefix.com">
+                    </label>
+
+                    <label>
+                        Contact Email
+                        <input
+                            type="email"
+                            value="Nandan@moviefix.com">
+                    </label>
+
+                    <label>
+                        Items Per Page
+                        <input
+                            type="number"
+                            value="10">
+                    </label>
+
+                    <label>
+                        Current Password
+                        <input
+                            type="password"
+                            placeholder="Enter current password">
+                    </label>
+
+                    <label>
+                        New Password
+                        <input
+                            type="password"
+                            placeholder="Enter new password">
+                    </label>
+
+                    <label class="wide">
+                        Confirm Password
+                        <input
+                            type="password"
+                            placeholder="Confirm new password">
+                    </label>
+
+                    <div class="actions wide">
+                        <button
+                            type="submit"
+                            class="btn red">
+                            Save Settings
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

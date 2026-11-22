@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies | MovieFix</title>
+    <link rel="stylesheet" href="client.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <div class="container nav">
+
+            <a href="index.html" class="brand">
+                Movie<span>Fix</span>
+            </a>
+
+            <nav class="nav-links">
+                <a class="active" href="index.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="index.html#genres">Genres</a>
+                <a href="index.html#trending">Trending</a>
+                <a href="watchlist.html">My Watchlist</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <input
+                    class="search-mini"
+                    type="text"
+                    placeholder="Search movies..."
+                    onkeydown="if(event.key === 'Enter') location.href = 'search.html?q=' + encodeURIComponent(this.value)"
+                >
+
+                <a class="btn btn-red" href="profile.html">
+                    Login
+                </a>
+
+                <button class="menu">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-head">
+                    <h2>
+                        All <span>Movies</span>
+                    </h2>
+                </div>
+
+                <div class="search-bar">
+
+                    <input
+                        id="movieSearch"
+                        type="text"
+                        placeholder="Search movies..."
+                    >
+
+                    <select id="genreFilter">
+                        <option>All Genres</option>
+                        <option>Action</option>
+                        <option>Adventure</option>
+                        <option>Drama</option>
+                        <option>Sci-Fi</option>
+                    </select>
+
+                    <select id="sortBy">
+                        <option>Sort By</option>
+                        <option>Highest Rating</option>
+                        <option>A-Z</option>
+                    </select>
+
+                </div>
+
+                <div class="grid" id="catalog">
+                    <article class="movie-card">
+                        <a href="movie-details.html" aria-label="View Inception details">
+                            <div class="poster">
+                                <img src="https://artofthemovies.co.uk/cdn/shop/files/inception_advance_SD18120_B-731214_920c5dfe-8d66-47c7-af74-11b98a83ebbf_1024x1024%402x.jpg?v=1737545739" alt="Inception poster" loading="lazy" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="card-body">
+                                <h3>Inception</h3>
+                                <div class="meta">2010 • Sci-Fi • Thriller</div>
+                                <div class="meta"><span class="rating">★ 8.8</span></div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="movie-card">
+                        <a href="movie-details.html" aria-label="View Spider-Man details">
+                            <div class="poster">
+                                <img src="https://artofthemovies.co.uk/cdn/shop/products/IMG_7259.jpg?v=1640349274&amp;width=1946" alt="Spider-Man poster" loading="lazy" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="card-body">
+                                <h3>Spider-Man: No Way Home</h3>
+                                <div class="meta">2021 • Action • Adventure</div>
+                                <div class="meta"><span class="rating">★ 8.2</span></div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="movie-card">
+                        <a href="movie-details.html" aria-label="View The Dark Knight details">
+                            <div class="poster">
+                                <img src="https://filmartgallery.com/cdn/shop/files/The-Dark-Knight-Vintage-Movie-Poster-Original_96d3cfa1_5000x.jpg?v=1773198168" alt="The Dark Knight poster" loading="lazy" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="card-body">
+                                <h3>The Dark Knight</h3>
+                                <div class="meta">2008 • Action • Crime</div>
+                                <div class="meta"><span class="rating">★ 9.0</span></div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="movie-card">
+                        <a href="movie-details.html" aria-label="View Avengers details">
+                            <div class="poster">
+                                <img src="https://artofthemovies.co.uk/cdn/shop/files/IMG_0410-1_15f1fdf3-31e8-4544-bbe0-e0befb8ece83_1024x1024%402x.jpg?v=1713453949" alt="Avengers poster" loading="lazy" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="card-body">
+                                <h3>Avengers</h3>
+                                <div class="meta">2012 • Action • Sci-Fi</div>
+                                <div class="meta"><span class="rating">★ 8.0</span></div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="movie-card">
+                        <a href="movie-details.html" aria-label="View Oppenheimer details">
+                            <div class="poster">
+                                <img src="https://www.originalfilmart.com/cdn/shop/files/oppenheimer_2023_original_film_art.webp?v=1761775685&amp;width=1200" alt="Oppenheimer poster" loading="lazy" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="card-body">
+                                <h3>Oppenheimer</h3>
+                                <div class="meta">2023 • Drama • History</div>
+                                <div class="meta"><span class="rating">★ 8.3</span></div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="movie-card">
+                        <a href="movie-details.html" aria-label="View Interstellar details">
+                            <div class="poster">
+                                <img src="https://www.originalfilmart.co.uk/cdn/shop/products/interstellar_2014_english_one_sheet_original_film-art_5000x.jpg?v=1581835562" alt="Interstellar poster" loading="lazy" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="card-body">
+                                <h3>Interstellar</h3>
+                                <div class="meta">2014 • Sci-Fi • Drama</div>
+                                <div class="meta"><span class="rating">★ 8.7</span></div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="pagination">
+
+                    <button>‹</button>
+
+                    <button class="active">
+                        1
+                    </button>
+
+                    <button>
+                        2
+                    </button>
+
+                    <button>
+                        3
+                    </button>
+
+                    <button>
+                        ›
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+            MovieFix • Responsive Client Side Web Pages • College Project
+        </div>
+
+    </footer>
+
+    <div class="toast"></div>
+
+</body>
+
+</html>

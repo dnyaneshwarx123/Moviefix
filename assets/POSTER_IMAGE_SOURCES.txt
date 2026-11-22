@@ -1,0 +1,11 @@
+MovieFix poster image sources
+
+These poster images are loaded from their source websites (internet connection required):
+- Inception (2010): Art of the Movies
+- Spider-Man: No Way Home (2021): Art of the Movies
+- The Dark Knight (2008): Film/Art Gallery
+- The Avengers (2012): Art of the Movies
+- Oppenheimer (2023): Original Film Art
+- Interstellar (2014): Original Film Art
+
+Movie posters are copyrighted artwork. This student project uses externally hosted poster images for demonstration/educational display. Keep source links and follow each site's usage terms.

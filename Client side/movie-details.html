@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details | MovieFix</title>
+    <link rel="stylesheet" href="client.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="container nav">
+        <a href="index.html" class="brand">Movie<span>Fix</span></a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a class="active" href="movies.html">Movies</a>
+            <a href="index.html#genres">Genres</a>
+            <a href="index.html#trending">Trending</a>
+            <a href="watchlist.html">My Watchlist</a>
+        </nav>
+        <div class="nav-actions">
+            <form class="search-form" action="search.html" method="get">
+                <input class="search-mini" name="q" placeholder="Search movies..." aria-label="Search movies">
+            </form>
+            <a class="btn btn-red" href="profile.html">Login</a>
+            <details class="mobile-menu">
+                <summary>☰</summary>
+                <div class="mobile-panel">
+                    <a href="index.html">Home</a>
+                    <a class="active" href="movies.html">Movies</a>
+                    <a href="index.html#genres">Genres</a>
+                    <a href="index.html#trending">Trending</a>
+                    <a href="watchlist.html">My Watchlist</a>
+                    <form action="search.html" method="get">
+                        <input class="search-mini" name="q" placeholder="Search movies..." aria-label="Search movies">
+                    </form>
+                </div>
+            </details>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="detail">
+        <div class="container">
+            <div class="detail-grid">
+                <div class="detail-poster">
+                    <img src="https://www.originalfilmart.co.uk/cdn/shop/products/interstellar_2014_english_one_sheet_original_film-art_5000x.jpg?v=1581835562" alt="Interstellar official movie poster" loading="lazy" referrerpolicy="no-referrer">
+                </div>
+                <div>
+                    <div class="eyebrow">SCI-FI</div>
+                    <h1>Interstellar</h1>
+                    <div class="meta">2014 • 2h 49m • <span class="rating">Rating: 8.7 / 10</span></div>
+                    <div class="chips"><span class="chip">Sci-Fi</span><span class="chip">Adventure</span><span class="chip">Drama</span></div>
+                    <p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                    <p><b style="color:#fff">Director:</b> Christopher Nolan<br><b style="color:#fff">Cast:</b> Matthew McConaughey, Anne Hathaway, Jessica Chastain</p>
+                    <div class="actions">
+                        <a class="btn btn-red" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/results?search_query=Interstellar+official+trailer">▶ Watch Trailer</a>
+                        <a class="btn btn-outline" href="watchlist.html">♡ Add to Watchlist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer><div class="container">MovieFix • Responsive Client Side Web Pages • College Project</div></footer>
+</body>
+</html>

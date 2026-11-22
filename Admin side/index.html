@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | MovieFix Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <header class="top">
+        <a href="index.html" class="brand">
+            Movie<span>Fix</span> Admin
+        </a>
+
+        <a href="../Client%20Side%20Web%20pages/index.html" class="muted">
+            View Client Site ↗
+        </a>
+    </header>
+
+    <div class="layout">
+
+        <aside class="side">
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="manage-movies.html">Movies</a>
+            <a href="users.html">Users</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="settings.html">Settings</a>
+
+            <a href="../Client%20Side%20Web%20pages/index.html">
+                Open Client Site
+            </a>
+
+            <a href="../index.html">
+                Back to Project
+            </a>
+        </aside>
+
+        <main class="main">
+
+            <div class="head">
+                <div>
+                    <div class="muted">ADMIN SIDE</div>
+                    <h1>Dashboard</h1>
+                </div>
+            </div>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <div class="muted">Total Movies</div>
+                    <b>250</b>
+                </div>
+
+                <div class="stat">
+                    <div class="muted">Total Users</div>
+                    <b>1,250</b>
+                </div>
+
+                <div class="stat">
+                    <div class="muted">Total Reviews</div>
+                    <b>5,320</b>
+                </div>
+
+                <div class="stat">
+                    <div class="muted">Genres</div>
+                    <b>15</b>
+                </div>
+
+            </div>
+
+            <div class="panel">
+
+                <div class="head">
+                    <h2>Recent Movies</h2>
+
+                    <a href="manage-movies.html" class="btn red">
+                        Manage Movies
+                    </a>
+                </div>
+
+                <div class="table-wrap">
+
+                    <table class="table">
+
+                        <thead>
+                            <tr>
+                                <th>Movie</th>
+                                <th>Genre</th>
+                                <th>Rating</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Interstellar</td>
+                                <td>Sci-Fi</td>
+                                <td>8.7 / 10</td>
+                                <td>Active</td>
+                            </tr>
+
+                            <tr>
+                                <td>Inception</td>
+                                <td>Action</td>
+                                <td>8.8 / 10</td>
+                                <td>Active</td>
+                            </tr>
+
+                            <tr>
+                                <td>The Dark Knight</td>
+                                <td>Action</td>
+                                <td>9.0 / 10</td>
+                                <td>Active</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="panel">
+
+                <div class="head">
+                    <h2>Recent Reviews</h2>
+
+                    <a href="reviews.html" class="btn dark">
+                        View Reviews
+                    </a>
+                </div>
+
+                <p class="muted">
+                    User ratings and reviews will appear here.
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+</body>
+
+</html>

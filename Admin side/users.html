@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users | MovieFix Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <header class="top">
+        <a href="index.html" class="brand">
+            Movie<span>Fix</span> Admin
+        </a>
+
+        <a href="../Client%20Side%20Web%20pages/index.html" class="muted">
+            View Client Site ↗
+        </a>
+    </header>
+
+    <div class="layout">
+
+        <aside class="side">
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="manage-movies.html">
+                Movies
+            </a>
+
+            <a href="users.html" class="active">
+                Users
+            </a>
+
+            <a href="reviews.html">
+                Reviews
+            </a>
+
+            <a href="settings.html">
+                Settings
+            </a>
+
+            <a href="../Client%20Side%20Web%20pages/index.html">
+                Open Client Site
+            </a>
+
+            <a href="../index.html">
+                Back to Project
+            </a>
+
+        </aside>
+
+        <main class="main">
+
+            <div class="head">
+                <div>
+                    <div class="muted">ADMIN SIDE</div>
+                    <h1>Manage Users</h1>
+                </div>
+            </div>
+
+            <div class="panel">
+
+                <div class="filters">
+
+                    <input
+                        id="adminSearch"
+                        type="text"
+                        placeholder="Search users..."
+                    >
+
+                    <select>
+                        <option>All Status</option>
+                        <option>Active</option>
+                        <option>Blocked</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="panel table-wrap">
+
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Nandan</td>
+                            <td>Nandan@email.com</td>
+                            <td>student</td>
+                            <td>Active</td>
+                            <td>
+                                <button class="btn dark">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Samarth</td>
+                            <td>Samarth@email.com</td>
+                            <td>student</td>
+                            <td>Active</td>
+                            <td>
+                                <button class="btn dark">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Sumanth</td>
+                            <td>Sumanth@email.com</td>
+                            <td>student</td>
+                            <td>Blocked</td>
+                            <td>
+                                <button class="btn dark">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

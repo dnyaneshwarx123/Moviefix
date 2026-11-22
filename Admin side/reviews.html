@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Reviews | MovieFix Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <header class="top">
+        <a href="index.html" class="brand">
+            Movie<span>Fix</span> Admin
+        </a>
+
+        <a href="../Client%20Side%20Web%20pages/index.html" class="muted">
+            View Client Site ↗
+        </a>
+    </header>
+
+    <div class="layout">
+
+        <aside class="side">
+            <a href="index.html">Dashboard</a>
+            <a href="manage-movies.html">Movies</a>
+            <a href="users.html">Users</a>
+            <a href="reviews.html" class="active">Reviews</a>
+            <a href="settings.html">Settings</a>
+
+            <a href="../Client%20Side%20Web%20pages/index.html">
+                Open Client Site
+            </a>
+
+            <a href="../index.html">
+                Back to Project
+            </a>
+        </aside>
+
+        <main class="main">
+
+            <div class="head">
+                <div>
+                    <div class="muted">ADMIN SIDE</div>
+                    <h1>Manage Reviews</h1>
+                </div>
+            </div>
+
+            <div class="panel">
+
+                <div class="filters">
+
+                    <input
+                        id="adminSearch"
+                        type="text"
+                        placeholder="Search reviews..."
+                    >
+
+                    <select>
+                        <option>All Ratings</option>
+                        <option>5 / 5</option>
+                        <option>4 / 5</option>
+                        <option>3 / 5</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="panel table-wrap">
+
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Movie</th>
+                            <th>Rating</th>
+                            <th>Review</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>User One</td>
+                            <td>Interstellar</td>
+                            <td>4.5 / 5</td>
+                            <td>Great movie!</td>
+                            <td>
+                                <button class="btn outline">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>User Two</td>
+                            <td>Inception</td>
+                            <td>4.0 / 5</td>
+                            <td>Good watch.</td>
+                            <td>
+                                <button class="btn outline">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>User Three</td>
+                            <td>Avengers</td>
+                            <td>5.0 / 5</td>
+                            <td>Excellent!</td>
+                            <td>
+                                <button class="btn outline">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

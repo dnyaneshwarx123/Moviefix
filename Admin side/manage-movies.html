@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Movies | MovieFix Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <header class="top">
+        <a href="index.html" class="brand">
+            Movie<span>Fix</span> Admin
+        </a>
+
+        <a href="../Client%20Side%20Web%20pages/index.html" class="muted">
+            View Client Site ↗
+        </a>
+    </header>
+
+    <div class="layout">
+
+        <aside class="side">
+            <a href="index.html">Dashboard</a>
+            <a href="manage-movies.html" class="active">Movies</a>
+            <a href="users.html">Users</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="settings.html">Settings</a>
+
+            <a href="../Client%20Side%20Web%20pages/index.html">
+                Open Client Site
+            </a>
+
+            <a href="../index.html">
+                Back to Project
+            </a>
+        </aside>
+
+        <main class="main">
+
+            <div class="head">
+                <div>
+                    <div class="muted">ADMIN SIDE</div>
+                    <h1>Manage Movies</h1>
+                </div>
+
+                <a class="btn red" href="add-movie.html">
+                    + Add Movie
+                </a>
+            </div>
+
+            <div class="panel">
+
+                <div class="filters">
+                    <input
+                        id="adminSearch"
+                        type="text"
+                        placeholder="Search movies..."
+                    >
+
+                    <select>
+                        <option>All Genres</option>
+                        <option>Action</option>
+                        <option>Drama</option>
+                        <option>Sci-Fi</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="panel table-wrap">
+
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Movie</th>
+                            <th>Genre</th>
+                            <th>Year</th>
+                            <th>Rating</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Interstellar</td>
+                            <td>Sci-Fi</td>
+                            <td>2014</td>
+                            <td>8.7</td>
+                            <td>Active</td>
+                            <td>
+                                <button class="btn dark">Edit</button>
+                                <button class="btn outline">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Inception</td>
+                            <td>Action</td>
+                            <td>2010</td>
+                            <td>8.8</td>
+                            <td>Active</td>
+                            <td>
+                                <button class="btn dark">Edit</button>
+                                <button class="btn outline">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>The Dark Knight</td>
+                            <td>Action</td>
+                            <td>2008</td>
+                            <td>9.0</td>
+                            <td>Active</td>
+                            <td>
+                                <button class="btn dark">Edit</button>
+                                <button class="btn outline">Delete</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

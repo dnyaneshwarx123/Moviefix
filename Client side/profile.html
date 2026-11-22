@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | MovieFix</title>
+    <link rel="stylesheet" href="client.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <div class="container nav">
+
+            <a href="index.html" class="brand">
+                Movie<span>Fix</span>
+            </a>
+
+            <nav class="nav-links">
+                <a class="active" href="index.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="index.html#genres">Genres</a>
+                <a href="index.html#trending">Trending</a>
+                <a href="watchlist.html">My Watchlist</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <input
+                    class="search-mini"
+                    type="text"
+                    placeholder="Search movies..."
+                    onkeydown="if(event.key === 'Enter') location.href = 'search.html?q=' + encodeURIComponent(this.value)"
+                >
+
+                <a class="btn btn-red" href="profile.html">
+                    Login
+                </a>
+
+                <button class="menu">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="profile">
+
+            <div class="container profile-grid">
+
+                <div class="panel profile-card">
+
+                    <div class="avatar">
+                        U
+                    </div>
+
+                    <h2>Nandan G G</h2>
+
+                    <p class="meta">
+                       Nandan@gmail.com
+                    </p>
+
+                    <button class="btn btn-outline">
+                        Edit Profile
+                    </button>
+
+                </div>
+
+                <div class="panel">
+
+                    <h2>Account Information</h2>
+
+                    <div class="list">
+
+                        <div class="list-item">
+                            <span>Full Name</span>
+                            <b>Nandan G G </b>
+                        </div>
+
+                        <div class="list-item">
+                            <span>Email</span>
+                            <b>Nandan@gmail.com</b>
+                        </div>
+
+                        <div class="list-item">
+                            <span>My Watchlist</span>
+                            <a href="watchlist.html">
+                                Open →
+                            </a>
+                        </div>
+
+                        <div class="list-item">
+                            <span>Recently Watched</span>
+                            <span>Coming soon</span>
+                        </div>
+
+                        <div class="list-item">
+                            <span>Account Settings</span>
+                            <span>Open →</span>
+                        </div>
+
+                        <div class="list-item">
+                            <span>Logout</span>
+                            <span>→</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+            MovieFix • Responsive Client Side Web Pages • College Project
+        </div>
+
+    </footer>
+
+    <div class="toast"></div>
+
+    <script src="client.js"></script>
+
+</body>
+
+</html>
